@@ -32,7 +32,7 @@ namespace YandexTests
             var element = driver.FindElement(By.CssSelector(".user-account__name"));
 
 
-            Assert.IsTrue(element.Displayed);
+            Assert.IsTrue(element.Displayed, "Wrong page!");
 
             driver.Close();
         }
